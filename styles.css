@@ -1,0 +1,151 @@
+.background-gold {
+    background-color: rgba(179, 130, 40, 0.9)
+}
+
+.main-wrapper {
+  width: 80%;
+  max-width: 1400px;
+  background: black;
+  min-height: 100vh;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+.top-space {
+    padding-top: 100px;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.active {
+    font-weight: bold;
+}
+
+.nav-link-black {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-family: 'Pirata One', system-ui;
+    font-size: 2rem
+
+}
+
+h5 {
+    text-align: center;
+}
+
+.hero-section {
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+}
+
+
+@media (max-width: 767.98px) {
+  #sidebar-menu:not(.show) {
+    display: none;
+  }
+
+  #sidebar-menu.show {
+    position: fixed;
+    top: 56px; /* height of mobile navbar */
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+  }
+}
+
+.logo-bottom {
+  width: 120%;
+  display: block;
+}
+
+.text-gold {
+    color: rgba(179, 130, 40, 0.9);
+    font-family: 'Pirata One', system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9vw
+}
+
+.silver-text {
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: silver !important
+}
+
+.band-member {
+    max-width: 100%;
+    height: auto;
+    padding: 3px;
+    border: solid 3px rgba(179, 130, 40, 0.9);
+}
+
+.card-info {
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: silver;
+    text-align: center
+}
+
+.card {
+    background-color: black;
+    border: solid 7px black;
+}
+
+.card-title {
+    font-family: 'Pirata One', system-ui;
+    color: silver;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: black !important;
+}
+
+.video-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  font-size: 4rem;
+  color: white;
+  opacity: 0.85;
+  
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+.video-wrapper:hover .play-button {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+#player {
+  padding: 12px;
+}
